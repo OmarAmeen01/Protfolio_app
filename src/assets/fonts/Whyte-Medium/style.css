@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Whyte';
+    src: local('Whyte Medium'), local('Whyte-Medium'),
+        url('Whyte-Medium.woff2') format('woff2'),
+        url('Whyte-Medium.woff') format('woff'),
+        url('Whyte-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
