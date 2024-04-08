@@ -4,4 +4,4 @@
 
 -this represents the project work i have done and brief introduction to me
 
-## Nothing too speacial about it
+## Nothing too special about it
