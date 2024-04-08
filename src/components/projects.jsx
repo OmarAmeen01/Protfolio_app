@@ -13,7 +13,6 @@ import weatherTimly from "../assets/day and hour service.jpg";
 import Button from "./button";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useId } from "react";
 import ProjectDetails from "./projectDetail";
 import { ScrollTrigger } from "gsap/all";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -147,7 +146,7 @@ function Projects() {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper relative max-[450px]:h-[450px] h-[400px] mx-5 mb-40  "
+        className="mySwiper relative max-[450px]:h-[450px] h-[400px] mx-5 mb-40 shadow-lg shadow-black  "
         preventClicks={false}
       >
         {projects.map((project) => {

@@ -119,7 +119,7 @@ function About() {
           start: "bottom center",
           end: "bottom 90%",
 
-          scrub: 0.8,
+          scrub: 1,
         },
       });
   }, [shouldScroll]);

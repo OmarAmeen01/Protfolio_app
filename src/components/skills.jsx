@@ -91,7 +91,7 @@ function Skills() {
             trigger: card,
             start: "top bottom",
 
-            end: "top center",
+            end: "bottom center",
 
             scrub: true,
           },
@@ -121,7 +121,7 @@ function Skills() {
             trigger: card,
 
             start: "top bottom",
-            end: "top center",
+            end: "bottom center",
             scrub: true,
           },
           ease: "power1.inOut",
