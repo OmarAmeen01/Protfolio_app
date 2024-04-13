@@ -91,7 +91,7 @@ function Skills() {
             trigger: card,
             start: "top bottom",
 
-            end: "bottom center",
+            end: "top center",
 
             scrub: true,
           },
@@ -121,7 +121,7 @@ function Skills() {
             trigger: card,
 
             start: "top bottom",
-            end: "bottom center",
+            end: "top center",
             scrub: true,
           },
           ease: "power1.inOut",
@@ -135,11 +135,14 @@ function Skills() {
       <p className="text-2xl  tracking-widest font-Mplus text-center p-3 mt-2 text-white font-extrabold ">
         SKILLS
       </p>
-      <article className="relative h-[50vh] min-[910px]:h-[40vh] max-[400px]:h-[40vh] border  overflow-hidden flex flex-col justify-center  ">
-        <div id="cards" className=" justify-center flex max-[900px]:flex-col ">
+      <article className="relative h-[60vh] min-[910px]:h-[50vh] max-[400px]:h-[50vh] border  overflow-hidden flex flex-col justify-center  ">
+        <div
+          id="cards"
+          className=" justify-center flex max-[900px]:flex-col gap-3"
+        >
           <div
             ref={cardRef}
-            className="cards1 flex gap-3  flex-row-reverse  perspective-400 perspective-origin-left  py-2 "
+            className="cards1 flex gap-3  flex-row-reverse  perspective-400 perspective-origin-left  mb-5 px-3"
           >
             {cards.map((card) => {
               return (
@@ -155,7 +158,7 @@ function Skills() {
                   />
 
                   <div id="iconName">
-                    <p className="  font-bold tracking-wider font-Mplus text-center p-1 mt-2 text-sm   lg:text-xl xl:text-2xl  min-[900px]:text-lg">
+                    <p className="  font-bold tracking-wider font-Mplus text-center p-1 mt-2 text-sm   lg:text-xl xl:text-2xl  min-[900px]:text-md">
                       {card.name}
                     </p>
                   </div>
@@ -166,14 +169,14 @@ function Skills() {
           <div
             ref={cardRef2}
             className="card2 flex gap-3 px-2 
-           perspective-400 perspective-origin-left "
+           perspective-400 perspective-origin-left mb-2"
           >
             {cards2.map((card) => {
               return (
                 <div
                   key={card.name}
                   className={`card shrink grow
-                  grid place-items-center bg-white rounded-lg p-3 border  shadow-xl shadow-black max-[400px]:p-1`}
+                  grid place-items-center bg-white rounded-lg p-3 border  shadow-lg shadow-black max-[400px]:p-1`}
                 >
                   <img
                     src={card.icon}
@@ -182,7 +185,7 @@ function Skills() {
                   />
 
                   <div id="iconName">
-                    <p className="text-sm font-bold tracking-wider font-Mplus text-center p-1 mt-2 max-[400px]:text-sm lg:text-xl xl:text-2xl  min-[900px]:text-lg">
+                    <p className="text-sm font-bold tracking-wider font-Mplus text-center p-1 mt-2 max-[400px]:text-sm lg:text-xl xl:text-2xl  min-[900px]:text-md">
                       {card.name}
                     </p>
                   </div>

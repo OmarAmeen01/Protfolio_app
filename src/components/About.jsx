@@ -118,7 +118,6 @@ function About() {
           trigger: "#hero",
           start: "bottom center",
           end: "bottom 90%",
-
           scrub: 1,
         },
       });
