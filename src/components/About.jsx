@@ -94,7 +94,7 @@ function About() {
           ease: "power1.inOut",
         });
     }
-  }, [isLoaded]);
+  }, [isLoaded, scale]);
 
   // scroll effect for  about section
 
