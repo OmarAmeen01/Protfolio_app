@@ -121,7 +121,9 @@ function Form({ onClick }) {
             <input
               type="submit"
               value="Submit"
-              className="text-[#828ead] btn font-semibold rounded-lg inline-block peer font-mPlus hover:text-[#c9d4f4] p-2 "
+skills
+              className="text-[#828ead] bg-transparent btn font-semibold rounded-lg inline-block peer font-mPlus hover:text-[#c9d4f4] p-2 "
+main
             />
             <span
               className="w-28 h-12 bg-green-500 absolute transiton-all duration-200 ease-in-out 
