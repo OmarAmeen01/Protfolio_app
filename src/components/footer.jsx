@@ -9,7 +9,7 @@ function Footer() {
     <>
       <section
         id="contact"
-        className=" p-3 mb-20 sm:footerStyle rounded-t-lg flex gap-3 mx-14 justify-evenly pb-11 max-[760px]:con-sec max-[350px]:mx-0"
+        className="p-3 mb-20 sm:footerStyle rounded-t-lg flex gap-3 mx-14 justify-evenly pb-11 max-[760px]:con-sec max-[350px]:mx-0"
       >
         <div id="address" className="flex flex-col  gap-8 mr-10">
           <h2 className="text-white text-3xl max-[380px]:text-2xl tracking-wide ">
