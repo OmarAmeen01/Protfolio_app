@@ -131,7 +131,7 @@ function ProjectDetails({
   return (
     <div
       id="main"
-      className="  p-3 flex flex-col bg-[#172a46] min-w-[16rem] bottom-[20rem] max-h-[28rem] rounded-lg  mt-[20rem] overflow-y-scroll  max-[380px]:min-h-[30rem] relative z-20 pb-16"
+      className=" p-3 flex flex-col bg-[#172a46] min-w-[16rem] bottom-[20rem] max-h-[28rem] rounded-lg  mt-[20rem] overflow-y-scroll  max-[380px]:min-h-[30rem] relative z-20 pb-16"
     >
       <h2
         id="galeryText"
@@ -231,12 +231,12 @@ function ProjectDetails({
 
       <button
         onClick={onClick}
-        className=" text-2xl top-0 right-5 sm:right-16 group bg-red-500 rounded-full w-[35px] h-[35px]  aspect-square hover:opacity-95 font-bold fixed text-white "
+        className=" text-4xl top-0 right-5 sm:right-16 group  rounded-full w-[35px] h-[35px]  aspect-square hover:opacity-95 font-bold absolute text-white "
       >
         <p className=" absolute top-10 right-0 p-2 rounded-md text-sm  bg-black text-white group-hover:opacity-100 opacity-0">
           close
         </p>
-        x
+        <ion-icon name="close-circle"></ion-icon>
       </button>
     </div>
   );
