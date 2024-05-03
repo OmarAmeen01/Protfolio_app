@@ -63,8 +63,17 @@
 .breakS2{
   @apply grid grid-cols-3 gap-y-6 ml-[1rem] transform-none 
 } */
-
+.SmStyle{
+  @apply grid-cols-2 mx-16 
+}
+.lgStyle{
+  @apply grid-cols-3
+}
+.smCard{
+  @apply h-[470px]
  }
+ }
+ 
  .address ion-icon{
   font-size: 25px;
   --ionicon-stroke-width: 45px;
@@ -95,8 +104,5 @@ background: #22c55e;
 
   }
 
-  .con-sec{
-    margin:0 0;
-  }
 
  } 
