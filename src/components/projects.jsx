@@ -56,7 +56,7 @@ function Projects() {
 
   return (
     <section id="porjects" className="my-5 py-3">
-      <p className="text-5xl tracking-widest font-Mplus text-center p-14 mt-2 text-white font-extrabold  -skew-y-6  underline decoration-green-500 decoration-8 underline-offset-8">
+      <p className="text-5xl max-[514px]:text-3xl max-[514px]:p-8 tracking-widest font-Mplus text-center p-14 mt-2 text-white font-extrabold  -skew-y-6  underline decoration-green-500 decoration-8 underline-offset-8">
           Case <span className="text-green-500">Studies</span>       
              </p>
       <div  className="grid mt-6 grid-cols-1 sm:SmStyle lg:lgStyle  flex-wrap gap-6 mx-5">
