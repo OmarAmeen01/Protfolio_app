@@ -3,6 +3,7 @@ import blogThumb from "../assets/blog.jpg";
 import simmonGame from "../assets/simmon game.jpg";
 import TodoThumb from "../assets/toDo app.jpg";
 import weatherIcon from "../assets/weather app.jpg";
+import exterlink from "../assets/icons8-external-link.svg";
 const projects = [
   {
     id: 0,
@@ -65,12 +66,17 @@ function Projects() {
        <a href={project.link} target="_blank"> 
          <div className="bg-[#1d294a] h-[510px] sm:smCard flex flex-col p-6 transition-all duration-500 ease-in-out  hover:scale-105 rounded-xl shadow-md shadow-gray-900">
            <img src={project.image} alt={project.title} className="w-full object-cover rounded-lg shadow-sm shadow-black"/>
-           <h2 className="text-white text-lg py-3">{project.name}</h2>
+           <h2 className="text-white flex gap-3 text-lg py-3">{project.name}<img
+                src={exterlink}
+                alt=""
+                className="w-8  transition-all duration-200 ease-in-out hover:scale-105"
+              /></h2>
            <p className="text-[#808dad] text-lg py-2">{project.description}</p>
            <div className="flex flex-wrap gap-3">
            {project.builtWith.map(tech=>{
            return  <span className="bg-[#808dad] text-white text-sm font-sans p-2 text-center rounded-lg">{tech}</span>
            })}</div>
+          
           </div>
       </a>)
        })}
