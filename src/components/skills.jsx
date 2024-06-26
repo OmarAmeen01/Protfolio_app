@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import git from "../assets/git.svg";
 import css from "../assets/css-3.svg";
 import html from "../assets/html-1.svg";
@@ -121,7 +121,7 @@ function Skills() {
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
       
-        className="mySwiper    sm:border-2"
+        className="mySwiper   sm:border-2"
       >
        {cards.map(card=>{
         return <SwiperSlide  className="swiper-slide   bg-white rounded-2xl relative shadow-[2px_3px_20px_5px_rgba(0,0,0,.6)] max-h-40 max-w-40 group">

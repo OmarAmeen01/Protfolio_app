@@ -1,9 +1,6 @@
-import { useState } from "react";
-import Button from "./button";
-import Form from "./form";
 
 function Footer() {
-  const [isClicked, setIsClicked] = useState(false);
+
 
   return (
     <>

@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useState,} from "react";
 import blogThumb from "../assets/blog.jpg";
 import simmonGame from "../assets/simmon game.jpg";
 import TodoThumb from "../assets/toDo app.jpg";

@@ -57,12 +57,7 @@
   .con-sec{
  @apply flex-col gap-20 mx-5
   }
-/* .breakS{
-  @apply grid grid-cols-3  gap-y-6 mr-[7rem] transform-none
-}
-.breakS2{
-  @apply grid grid-cols-3 gap-y-6 ml-[1rem] transform-none 
-} */
+
 .SmStyle{
   @apply grid-cols-2 mx-16 
 }
@@ -123,14 +118,14 @@ background: #22c55e;
   width: 100%;
 }
 .swiper-pagination-bullet {
-  background-color: #fff; /* Change the color of the bullets */
+  background-color: #fff; 
 width:8px;
 height: 8px;
-  opacity: 1; /* Set the opacity of the bullets */
+  opacity: 1; 
 }
 .swiper-pagination-bullet-active {
-  background-color: #22c55e; /* Change the color of the active bullet */
-  border-radius: 50%; /* Make the active bullet round */
+  background-color: #22c55e; 
+  border-radius: 50%; 
 }
  @media only screen and (max-width:440px){
   #formHeader::before{
