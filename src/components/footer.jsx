@@ -7,12 +7,15 @@ function Footer() {
 
   return (
     <>
+      <p className="text-3xl max-[514px]:text-2xl max-[514px]:p-8 tracking-widest font-Mplus text-center p-14 mt-2 text-white font-extrabold  -skew-y-6  underline decoration-green-500 decoration-8 underline-offset-8">
+          LET'S <span className="text-green-500">CONNECT</span>       
+             </p>
       <section
         id="contact"
-        className="p-3 mb-20 sm:footerStyle rounded-t-lg flex gap-3 mx-14 justify-evenly pb-11 max-[760px]:con-sec max-[350px]:mx-0"
+        className="p-3  sm:footerStyle rounded-t-lg flex gap-3 mx-14 justify-evenly pb-11 max-[760px]:con-sec max-[350px]:mx-0"
       >
         <div id="address" className="flex flex-col  gap-8 mr-10">
-          <h2 className="text-white text-3xl max-[380px]:text-2xl tracking-wide ">
+          <h2 className="text-white text-3xl max-[380px]:text-2xl tracking-wide text-center ">
             Connect with me
           </h2>
           <div className="address flex gap-3">

@@ -6,17 +6,18 @@ import github from "../assets/github-icon-1.svg";
 import reactIcon from "../assets/react-2.svg";
 import reduxIcon from "../assets/redux.svg";
 import tailwindIcon from "../assets/tailwind-css-2.svg";
-import arrowUp from "../assets/arrowhead-up-svgrepo-com.svg";
-import arrowDown from "../assets/arrowhead-down-svgrepo-com.svg";
 import typescriptIcon from "../assets/typescript.svg";
 import javsriptIcon from "../assets/logo-javascript.svg";
 import gsapIcon from "../assets/gsap-greensock.svg";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger);
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import "Swiper/styles";
+import "swiper/css"
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 const cards = [
   {
     name: "Javascript",
@@ -39,8 +40,6 @@ const cards = [
     name: "Redux",
     icon: reduxIcon,
   },
-];
-const cards2 = [
   {
     name: "Tailwind",
     icon: tailwindIcon,
@@ -63,137 +62,48 @@ const cards2 = [
     icon: gsapIcon,
   },
 ];
-
 function Skills() {
   const [isOpen, setOpen] = useState(false);
-  const cardRef = useRef(null);
-  const cardRef2 = useRef(null);
 
-  useGSAP(() => {
-    const cardsArr1 = gsap.utils.toArray(cardRef.current.children);
 
-    const cardsArr2 = gsap.utils.toArray(cardRef2.current.children);
-    cardsArr1.forEach((card, index) => {
-      gsap.fromTo(
-        card,
-        {
-          transform: `translate3d(${index * 140}px,0px,-${(index + 1) * 30}px)`,
-          rotateY: 6,
-          zIndex: -index,
-
-          ease: "power1.inOut",
-        },
-        {
-          transform: `translate3d(${index * 30}px,0px,-${(index + 1) * 16}px)`,
-          rotateY: 6,
-          zIndex: -index,
-          scrollTrigger: {
-            trigger: card,
-            start: "top bottom",
-
-            end: "top center",
-
-            scrub: true,
-          },
-
-          ease: "power1.inOut",
-        }
-      );
-    });
-
-    cardsArr2.forEach((card, index) => {
-      gsap.fromTo(
-        card,
-        {
-          transform: `translate3d(-${index * 110}px,0px,-${
-            (index + 1) * 10
-          }px)`,
-          rotateY: 6,
-          repeat: -1,
-          zIndex: -index,
-        },
-        {
-          transform: `translate3d(-${index * 10}px,0px,-${(index + 1) * 16}px)`,
-          rotateY: 6,
-
-          zIndex: -index,
-          scrollTrigger: {
-            trigger: card,
-
-            start: "top bottom",
-            end: "top center",
-            scrub: true,
-          },
-          ease: "power1.inOut",
-        }
-      );
-    });
-  }, []);
 
   return (
-    <section id="skills" className="  p-2 ">
-      <p className="text-2xl  tracking-widest font-Mplus text-center p-3 mt-2 text-white font-extrabold ">
-        SKILLS
-      </p>
-      <article className="relative h-[60vh] min-[910px]:h-[50vh] max-[400px]:h-[50vh] border  overflow-hidden flex flex-col justify-center  ">
-        <div
-          id="cards"
-          className=" justify-center flex max-[900px]:flex-col gap-3"
-        >
-          <div
-            ref={cardRef}
-            className="cards1 flex gap-3  flex-row-reverse  perspective-400 perspective-origin-left  mb-5 px-3"
-          >
-            {cards.map((card) => {
-              return (
-                <div
-                  key={card.name}
-                  className={`card shrink grow
-               grid place-items-center bg-white rounded-lg p-3 border max-[400px]:p-1 shadow-xl shadow-black`}
-                >
-                  <img
-                    src={card.icon}
-                    alt={card.name}
-                    className="max-[400px]:w-8 min-[400px]:w-9 lg:w-14 xl:w-16  min-[900px]:w-14"
-                  />
+    <section id="skills" className="p-2 ">
+       <p className="text-3xl max-[514px]:text-2xl max-[514px]:p-8 tracking-widest font-Mplus text-center p-14 mt-2 text-white font-extrabold  -skew-y-6  underline decoration-green-500 decoration-8 underline-offset-8">
+          SKI<span className="text-green-500">LLS</span>       
+             </p>
+      <article className="relative    overflow-hidden ">
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+      
+        }
+      
+    }
 
-                  <div id="iconName">
-                    <p className="  font-bold tracking-wider font-Mplus text-center p-1 mt-2 text-sm   lg:text-xl xl:text-2xl  min-[900px]:text-md">
-                      {card.name}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <div
-            ref={cardRef2}
-            className="card2 flex gap-3 px-2 
-           perspective-400 perspective-origin-left mb-2"
-          >
-            {cards2.map((card) => {
-              return (
-                <div
-                  key={card.name}
-                  className={`card shrink grow
-                  grid place-items-center bg-white rounded-lg p-3 border  shadow-lg shadow-black max-[400px]:p-1`}
-                >
-                  <img
-                    src={card.icon}
-                    alt={card.name}
-                    className="max-[400px]:w-8 min-[400px]:w-9 lg:w-14 xl:w-16  min-[900px]:w-14"
-                  />
+   
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+      
+        className="mySwiper"
+      >
+       {cards.map(card=>{
+        return <SwiperSlide title={card.name} className="swiper-slide bg-white rounded-2xl shadow-[2px_3px_20px_5px_rgba(0,0,0,.6)] max-h-40 max-w-40"><img className="w-25 " src={card.icon} alt={card.name} />
+       </SwiperSlide>
+     
+       })} 
 
-                  <div id="iconName">
-                    <p className="text-sm font-bold tracking-wider font-Mplus text-center p-1 mt-2 max-[400px]:text-sm lg:text-xl xl:text-2xl  min-[900px]:text-md">
-                      {card.name}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+      </Swiper>
+    
+        
       </article>
     </section>
   );

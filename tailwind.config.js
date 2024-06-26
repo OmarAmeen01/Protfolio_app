@@ -14,6 +14,13 @@ export default {
         wHev:["WhHev"],
         wLight:["WhLight"],
         Mplus:['M PLUS', "sans-serif"]
+      },
+      gridTemplateColumns: {
+      cols3: 'repeat(3, minmax(50px, 1fr))',
+
+       
+    
+
       }
     },
   },

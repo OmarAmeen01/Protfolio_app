@@ -70,7 +70,7 @@
   @apply grid-cols-3
 }
 .smCard{
-  @apply h-[470px]
+  @apply h-[430px]
  }
  }
  
@@ -87,6 +87,14 @@
  #contact ul li:hover{
   color:#22c55e
  }
+ #AboutHeader:before{
+  content:"";
+display: inline-block;
+width:3rem;
+height:4px;
+margin-right: 1.5rem;
+background: #22c55e
+ }
  #formHeader::before{
 content:"";
 display: inline-block;
@@ -97,11 +105,40 @@ margin-right: 1.5rem;
 background: #22c55e;
 
  }
- 
+ .swiper {
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  background-color: #fff; /* Change the color of the bullets */
+width:8px;
+height: 8px;
+  opacity: 1; /* Set the opacity of the bullets */
+}
+.swiper-pagination-bullet-active {
+  background-color: #22c55e; /* Change the color of the active bullet */
+  border-radius: 50%; /* Make the active bullet round */
+}
  @media only screen and (max-width:440px){
   #formHeader::before{
     width:0px;
 
+  }
+  #AboutHeader:before{
+    width:0px
   }
 
 
