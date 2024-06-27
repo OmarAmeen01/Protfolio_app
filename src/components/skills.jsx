@@ -61,10 +61,7 @@ const cards = [
     name: "Typescript",
     icon: typescriptIcon,
   },
-{
-  name:"Mongodb",
-  icon:mongodb
-},
+
 {
   name:"Postgresql",
   icon:postgresql
