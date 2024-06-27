@@ -6,8 +6,7 @@ function About() {
 
   const textBlock = useRef(null);
  const about = {
-  describe:`A Full stack developer who codes for ambition and not to get a job. I love to interact with computers and mess around with them. I want explore every field of computer science  and build super cool projects.In short I want enjoy the Art of computer science
-    `,
+  describe:`I am a passionate Full Stack Developer driven by ambition rather than just employment. My enthusiasm lies in interacting with computers and exploring their vast potential. I thrive on the diversity within computer science and refuse to confine myself to a single specialization.`,
     role:"Full stack developer"
  }
 
