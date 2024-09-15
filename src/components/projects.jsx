@@ -1,7 +1,7 @@
 import { useState,} from "react";
 import blogThumb from "../assets/blog.jpg";
-import simmonGame from "../assets/simmon game.jpg";
-import TodoThumb from "../assets/toDo app.jpg";
+import simmonGame from "../assets/simmon game.jpg"
+import blogNation from "../assets/blogPreview.png"
 import weatherIcon from "../assets/weather app.jpg";
 import exterlink from "../assets/icons8-external-link.svg";
 const projects = [
@@ -30,13 +30,13 @@ const projects = [
   },
   {
     id: 2,
-    name: "Todo App",
+    name: "BlogNation",
     description:
-      "Create the list of anything using this web app built with",
-    builtWith: ["React", "Redux", "TailwindCss","Javascript"],
-    image:TodoThumb,
-    link: "https://to-do-app-sandy-five.vercel.app/",
-    githubLink: "https://github.com/OmarAmeen01/To-do-app",
+      "full stack blog app  that has all the features of social media from user profiles, comments likes and rich text editor",
+    builtWith: ["React", "TailwindCss","Hono js","Cloudflare worker","prisma","postgreSQl","Editorjs"],
+    image:blogNation,
+    link: "https://blog-nation-three.vercel.app/",
+    githubLink: "https://github.com/OmarAmeen01/Blog_nation",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ function Projects() {
        {projects.map(project=>{
        return(
        <a href={project.link} target="_blank"> 
-         <div className="bg-[#1d294a] max-h-[480px] sm:smCard flex flex-col p-6 transition-all duration-500 ease-in-out  hover:scale-105 rounded-xl shadow-md shadow-gray-900">
+         <div className="bg-[#1d294a] sm:min-h-[500px] max-h-[500px] sm:smCard flex flex-col p-6 transition-all duration-500 ease-in-out  hover:scale-105 rounded-xl shadow-md shadow-gray-900">
            <img src={project.image} alt={project.title} className="w-full object-cover rounded-lg shadow-sm shadow-black"/>
            <h2 className="text-white flex gap-3 text-lg py-3">{project.name}<img
                 src={exterlink}
