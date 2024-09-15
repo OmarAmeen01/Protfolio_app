@@ -5,8 +5,18 @@ import blogNation from "../assets/blogPreview.png"
 import weatherIcon from "../assets/weather app.jpg";
 import exterlink from "../assets/icons8-external-link.svg";
 const projects = [
-  {
+    {
     id: 0,
+    name: "BlogNation",
+    description:
+      "full stack blog app  that has all the features of social media from user profiles, comments likes and rich text editor",
+    builtWith: ["React", "TailwindCss","Hono js","Cloudflare worker","prisma","postgreSQl","Editorjs", "Full Stack"],
+    image:blogNation,
+    link: "https://blog-nation-three.vercel.app/",
+    githubLink: "https://github.com/OmarAmeen01/Blog_nation",
+  },
+  {
+    id: 1,
     name: "Giga Blog",
     description: `This is the blog app with all the CRUD features built with`,
     builtWith: [
@@ -19,7 +29,7 @@ const projects = [
     githubLink: "https://github.com/OmarAmeen01/Blog-website",
   },
   {
-    id: 1,
+    id: 2,
     name: "Weather App",
     description:
       "Checkout the weather of any location using this web app built with",
@@ -28,16 +38,7 @@ const projects = [
     link: "https://weatherom.netlify.app/",
     githubLink: "https://github.com/OmarAmeen01/weather-app",
   },
-  {
-    id: 2,
-    name: "BlogNation",
-    description:
-      "full stack blog app  that has all the features of social media from user profiles, comments likes and rich text editor",
-    builtWith: ["React", "TailwindCss","Hono js","Cloudflare worker","prisma","postgreSQl","Editorjs"],
-    image:blogNation,
-    link: "https://blog-nation-three.vercel.app/",
-    githubLink: "https://github.com/OmarAmeen01/Blog_nation",
-  },
+
   {
     id: 3,
     name: "Simmon game",
@@ -61,7 +62,7 @@ function Projects() {
        {projects.map(project=>{
        return(
        <a href={project.link} target="_blank"> 
-         <div className="bg-[#1d294a] sm:min-h-[500px] max-h-[500px] sm:smCard flex flex-col p-6 transition-all duration-500 ease-in-out  hover:scale-105 rounded-xl shadow-md shadow-gray-900">
+         <div className="bg-[#1d294a] sm:min-h-[500px] max-h-[530px] sm:smCard flex flex-col p-6 transition-all duration-500 ease-in-out  hover:scale-105 rounded-xl shadow-md shadow-gray-900">
            <img src={project.image} alt={project.title} className="w-full object-cover rounded-lg shadow-sm shadow-black"/>
            <h2 className="text-white flex gap-3 text-lg py-3">{project.name}<img
                 src={exterlink}
